@@ -12,8 +12,8 @@ from telegram.ext import (
 TOKEN = "8338265637:AAG7zi_nXgOzhPqeRjYLQkYRQTK-p85jNb8"   # <--- Replace with bot token
 
 # Use environment variables for safety (or replace directly)
-EMAIL_ADDRESS = 'bissielomakokidianechrystelle@gmail.com'
-EMAIL_PASSWORD = '@Emma2010'  # Use an app password here
+EMAIL_ADDRESS = "bissielomakokidianechrystelle@gmail.com"
+EMAIL_PASSWORD = "@Emma2010"   # Use an app password here
 
 PREMIUM_FILE = "premium_users.json"
 ALL_USERS_FILE = "all_users.json"
