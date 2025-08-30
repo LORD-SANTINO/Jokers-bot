@@ -203,7 +203,7 @@ Commands:
             return ADD_PREM
         elif query.data == "admin_deleprem":
             await query.edit_message_text("Send me the user ID to REMOVE from premium:")
-return DEL_PREM
+            return DEL_PREM
         elif query.data == "admin_broadcast":
             await query.edit_message_text("Send me the message text to BROADCAST to all users:")
             return BROADCAST
