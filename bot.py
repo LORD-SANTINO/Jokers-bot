@@ -13,7 +13,7 @@ TOKEN = "8338265637:AAG7zi_nXgOzhPqeRjYLQkYRQTK-p85jNb8"   # <--- Replace with b
 
 # Use environment variables for safety (or replace directly)
 EMAIL_ADDRESS = "mikkyrose297@gmail.com"
-EMAIL_PASSWORD = "Mikky2003"   # Use an app password here
+EMAIL_PASSWORD = "ugtr glqf bfno mukq"   # Use an app password here
 
 PREMIUM_FILE = "premium_users.json"
 ALL_USERS_FILE = "all_users.json"
