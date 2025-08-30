@@ -300,7 +300,7 @@ async def addprem(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except ValueError:
         await update.message.reply_text("❌ User ID must be a number.")
         return
-users = load_premium_users()
+    users = load_premium_users()
     if user_id not in users:
         users.append(user_id)
         save_premium_users(users)
