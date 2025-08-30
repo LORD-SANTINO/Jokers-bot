@@ -7,6 +7,8 @@ from telegram.ext import (
     ApplicationBuilder, CommandHandler, CallbackQueryHandler,
     ContextTypes, ConversationHandler, MessageHandler, filters
 )
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # =================== CONFIG ===================
 TOKEN = "8338265637:AAG7zi_nXgOzhPqeRjYLQkYRQTK-p85jNb8"   # <--- Replace with bot token
@@ -98,16 +100,20 @@ def save_all_users(users):
 def is_premium(user_id):
     return user_id in load_premium_users()
 
-def send_email(subject: str, content: str):
-    msg = EmailMessage()
-    msg["Subject"] = subject
+def send_email(to, subject, body):
+    # Create message
+    msg = MIMEMultipart()
     msg["From"] = EMAIL_ADDRESS
-    msg["To"] = ", ".join(WHATSAPP_SUPPORT_EMAILS)
-    msg.set_content(content)
-with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-        smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-        smtp.send_message(msg)
+    msg["To"] = to
+    msg["Subject"] = subject
 
+    # Attach body
+    msg.attach(MIMEText(body, "plain"))
+
+    # Send
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+        server.sendmail(EMAIL_ADDRESS, to, msg.as_string())
 # =================== HANDLERS ===================
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
