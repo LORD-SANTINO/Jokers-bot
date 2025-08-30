@@ -27,7 +27,7 @@ WHATSAPP_SUPPORT_EMAILS = [
 
 OWNER_ID = 7243305432
 
-OWNER_URL = "https://t.me/Exodus_tech1"
+OWNER_URL = "https://t.me/dax_channel01"
 CHANNEL_URL = "https://t.me/Exodustrust"
 BUG_BOT_URL = "https://t.me/YourBugBot"   # <--- Define properly
 CPANEL_URL = "https://your-cpanel-link.com"  # <--- Define properly
