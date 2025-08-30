@@ -333,7 +333,7 @@ async def deleprem(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("User was not premium.")
 
 # =================== MAIN ===================
-if name == "main":
+if __name__ == '__main__':
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
