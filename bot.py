@@ -23,7 +23,7 @@ WHATSAPP_SUPPORT_EMAILS = [
     'abuse@whatsapp.com',
 ]
 
-OWNER_ID = 7832941797  # Replace with your Telegram user ID
+OWNER_ID = "7243305432"
 
 OWNER_URL = "https://t.me/@Exodus_tech1"
 CHANNEL_URL = "https://t.me/@Exodustrust"
