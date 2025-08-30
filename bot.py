@@ -9,11 +9,11 @@ from telegram.ext import (
 )
 
 # =================== CONFIG ===================
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"   # <--- Replace with bot token
+TOKEN = "8338265637:AAG7zi_nXgOzhPqeRjYLQkYRQTK-p85jNb8"   # <--- Replace with bot token
 
 # Use environment variables for safety (or replace directly)
-EMAIL_ADDRESS = os.getenv("BOT_EMAIL", "example@gmail.com")
-EMAIL_PASSWORD = os.getenv("BOT_EMAIL_PASS", "app_password_here")
+EMAIL_ADDRESS = 'bissielomakokidianechrystelle@gmail.com'
+EMAIL_PASSWORD = '@Emma2010'  # Use an app password here
 
 PREMIUM_FILE = "premium_users.json"
 ALL_USERS_FILE = "all_users.json"
@@ -25,7 +25,7 @@ WHATSAPP_SUPPORT_EMAILS = [
     "abuse@whatsapp.com",
 ]
 
-OWNER_ID = 7832941797  # Replace with your Telegram ID
+OWNER_ID = 7243305432
 
 OWNER_URL = "https://t.me/Exodus_tech1"
 CHANNEL_URL = "https://t.me/Exodustrust"
